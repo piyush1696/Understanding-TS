@@ -111,7 +111,7 @@ class Employee extends Person{
     }
 }
 
-const e1 = new Employee('Intern', 15000,'Naveen', "bansal", new Date(1988, 5, 23));
+const e1 = new Employee('Intern', 100000,'Naveen', "bansal", new Date(1988, 5, 23));
 e1.age = 33;
 console.log(e1.fullName);
 console.log(e1.birthDate);
