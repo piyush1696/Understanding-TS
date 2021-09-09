@@ -102,7 +102,7 @@ class Employee extends Person{
         lastName: string,
         birth: Date,
         ){
-        super(firstName,lastName, birth);
+            super(firstName,lastName, birth);
     }
 
     // Method overriding
@@ -217,12 +217,12 @@ abstract class Book{
     }
 }
 
-interface shelf{
+interface IShelf{
     serialNumber: number;
     pages: number;
 }
 
-class Novels extends Book implements shelf{
+class Novels extends Book implements IShelf{
     constructor(name: string, genre: string, public serialNumber: number, public pages: number){
         super(name, genre);
     }
